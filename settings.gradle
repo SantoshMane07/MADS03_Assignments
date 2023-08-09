@@ -16,3 +16,4 @@ rootProject.name = "Assignment2"
 include ':app'
 include ':hahaha'
 include ':Assignment3'
+include ':Assignment4'
