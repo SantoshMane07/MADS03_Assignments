@@ -44,6 +44,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.assignment2.ui.theme.Assignment2Theme
+import java.lang.reflect.Modifier
 import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {
@@ -120,7 +121,7 @@ private fun DisplayUserCard(id: Long, name: String, index: Int,modifier:Modifier
 }
 
 @Composable
-private fun UserDetails(id:Long,name:String,modifier:Modifier) {
+private fun UserDetails(id:Long,name:String,modifier: Modifier) {
     Column(
         horizontalAlignment = Alignment.Start,
         verticalArrangement = Arrangement.Center,
