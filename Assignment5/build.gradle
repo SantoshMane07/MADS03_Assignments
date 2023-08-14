@@ -7,13 +7,13 @@ plugins {
 }
 
 android {
-    namespace 'com.example.assignment4'
-    compileSdk 33
+    namespace 'com.example.assignment5'
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.assignment4"
+        applicationId "com.example.assignment5"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -60,6 +60,9 @@ dependencies {
     implementation 'androidx.compose.ui:ui-graphics'
     implementation 'androidx.compose.ui:ui-tooling-preview'
     implementation 'androidx.compose.material3:material3'
+    implementation 'androidx.room:room-common:2.5.2'
+    implementation 'androidx.room:room-ktx:2.5.2'
+    implementation 'androidx.games:games-activity:1.1.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -67,8 +70,10 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    //
+
     //Hilt
-    implementation "com.google.dagger:hilt-android:2.46.1"
+    implementation ("com.google.dagger:hilt-android:2.46.1")
     kapt "com.google.dagger:hilt-compiler:2.46.1"
     //Navigation
     implementation("androidx.navigation:navigation-compose:2.7.0")
@@ -91,13 +96,19 @@ dependencies {
     //Pagging3
     implementation "androidx.paging:paging-compose:3.2.0"
     //Template
-    implementation("androidx.compose:compose-bom:2023.06.01")
+    implementation("androidx.compose:compose-bom:2023.08.00")
     debugImplementation("androidx.compose.ui:ui-tooling")
     implementation("androidx.compose.ui:ui-tooling-preview")
     //OHHttp
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     //coil
     implementation("io.coil-kt:coil-compose:2.3.0")
+    // DataStore
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+    //Room DB
+    implementation "androidx.room:room-runtime:2.5.2"
+    kapt "androidx.room:room-compiler:2.5.2"
+
 }
 kapt {
     correctErrorTypes true

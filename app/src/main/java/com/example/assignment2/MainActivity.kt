@@ -65,7 +65,7 @@ class MainActivity : ComponentActivity() {
                 }) {
                     //A surface container using the 'background' color from the theme
                     Surface(
-                        modifier = Modifier.fillMaxSize().padding(it),
+                        modifier = androidx.compose.ui.Modifier.fillMaxSize().padding(it),
                         color = MaterialTheme.colorScheme.background
                     ) {
                         val context = LocalContext.current
